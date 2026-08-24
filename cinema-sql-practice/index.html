@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL SELECT Practice - Cinema DB</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <span class="badge">SQL LAB</span>
+            <h1>CINEMA DATABASE - SQL SELECT PRACTICE</h1>
+        </div>
+        <div class="header-right">
+            <span id="timer">00:00</span>
+            <span class="progress-badge" id="progress">0%</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- LEFT: Question + Editor + Result -->
+        <main>
+            <div class="question-card">
+                <h3 id="q-title"></h3>
+                <div id="q-desc" class="q-desc"></div>
+                <div id="q-example" class="q-example"></div>
+            </div>
+
+            <div class="tables-section">
+                <span class="tables-label">Tables:</span>
+                <div id="tables-list" class="tables-list"></div>
+            </div>
+
+            <div class="editor-section">
+                <textarea id="sql-input" spellcheck="false"></textarea>
+                <div class="toolbar">
+                    <button id="btn-execute" class="btn btn-execute">▶ Execute</button>
+                    <button id="btn-clear" class="btn btn-outline">Clear</button>
+                    <button id="btn-judge" class="btn btn-judge">✔ Judge</button>
+                    <button id="btn-answer" class="btn btn-answer">💡 เฉลย</button>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <div id="result-msg" class="result-msg"></div>
+                <div id="result-table" class="result-table-container"></div>
+            </div>
+        </main>
+
+        <!-- RIGHT: Question List -->
+        <aside>
+            <div class="score-box">
+                <span>Score</span>
+                <span id="score-val">0 / 0</span>
+            </div>
+            <div id="q-list"></div>
+        </aside>
+    </div>
+
+    <script src="js/sql.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
