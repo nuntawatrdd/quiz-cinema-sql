@@ -1,7 +1,7 @@
 // ==================== CONFIGURATION ====================
 const MOTIVATIONS = [
     "เก่งมากกก", "ทำด้ายยยย", "อย่าลืมน้ำำ", "นั่่งหลงงตรง ฤ ป่าววว",
-    "กอด ๆๆ", "ไม่ง่ายทำดึ้ยยย", "สู้วว ๆ", "เก่งทีสุดด", "สิบนิ้วป้วง", "มห้ล纪委书记"
+    "กอด ๆๆ", "ไม่ง่ายทำดึ้ยยย", "สู้วว ๆ", "เก่งทีสุดด", "สิบนิ้วป้วง"
 ];
 
 const TABLE_NAMES = [
@@ -37,7 +37,7 @@ const QUESTIONS = [
     {
         id: 2,
         title: "Q2 - WHERE Condition",
-        desc: "จงแสดง cinema_id, name และ address ของโรงภาพยนตร์ท่ีอยู่ในรัฐ 'Bangkok'",
+        desc: "จงแสดง cinema_id, name และ address ของโรงภาพยนตร์ที่อยู่ใน 'Bangkok'",
         example: `cinema_id | name                | address
 --------- | ------------------- | -----------
 1         | BigCinema_Central   | 1_Ratchadamri_Rd`,
@@ -47,7 +47,7 @@ const QUESTIONS = [
     {
         id: 3,
         title: "Q3 - WHERE Date",
-        desc: "จงแสดง movie_id, title และ release_date ของหนังท่ีฉายหลังจากปี 2024 (2025 เป็นต้นไป)",
+        desc: "จงแสดง movie_id, title และ release_date ของหนังที่ฉายหลังจากปี 2024 (2025 เป็นต้นไป)",
         example: `movie_id | title            | release_date
 -------- | ---------------- | ------------
 1        | Space_Warriors   | 2025-01-10`,
@@ -57,7 +57,7 @@ const QUESTIONS = [
     {
         id: 4,
         title: "Q4 - Count Data",
-        desc: "จงนับจำนวนหนังทังหมดในฐานข้อมูล (ใช้ column name ว่า total_movies)",
+        desc: "จงนับจำนวนหนังทั้งหมดในฐานข้อมูล (ใช้ column name ว่า total_movies)",
         example: `total_movies
 ------------
 4`,
@@ -67,7 +67,7 @@ const QUESTIONS = [
     {
         id: 5,
         title: "Q5 - WHERE String Match",
-        desc: "จงแสดง seat_id, row_label และ seat_no ของที่นั่งท่ีเสียหาย (Status เป็น 'Broken')",
+        desc: "จงแสดง seat_id, row_label และ seat_no ของที่นั่งที่เสียหาย (Status เป็น 'Broken')",
         example: `seat_id | row_label | seat_no
 ------- | --------- | -------
 3       | B         | 1`,
@@ -77,7 +77,7 @@ const QUESTIONS = [
     {
         id: 6,
         title: "Q6 - Salary Filter",
-        desc: "จงแสดงชื่อและ email ของพนักงานท่ีมีเงินเดือนมากกว่า 30,000",
+        desc: "จงแสดงชื่อและ email ของพนักงานที่มีเงินเดือนมากกว่า 30,000",
         example: `name         | email
 ----------- | ----------
 Mike_Rose  | MIKE_ROSE`,
@@ -87,7 +87,7 @@ Mike_Rose  | MIKE_ROSE`,
     {
         id: 7,
         title: "Q7 - LIKE Pattern",
-        desc: "จงแสดงชื่อหนังท่ีมีคำท่ีขึ้นต้นด้วย 'Space'",
+        desc: "จงแสดงชื่อหนังที่มีคำที่ขึ้นต้นด้วย 'Space'",
         example: `title
 -----------
 Space_Warriors`,
@@ -97,7 +97,7 @@ Space_Warriors`,
     {
         id: 8,
         title: "Q8 - Distinct Values",
-        desc: "จงแสดงสถานะ (status) ของที่นั่งท่ีไม่ซ้ำกัน",
+        desc: "จงแสดงสถานะ (status) ของที่นั่งที่ไม่ซ้ำกัน",
         example: `status
 --------
 Available`,
@@ -127,7 +127,7 @@ Chris_Evans`,
     {
         id: 11,
         title: "Q11 - Payment Method",
-        desc: "จงแสดง booking_id และ payment_method ของการสำรองที่นั่งท่ีชำระเงินผ่าน 'Credit_Card'",
+        desc: "จงแสดง booking_id และ payment_method ของการสำรองที่นั่งที่ชำระเงินผ่าน 'Credit_Card'",
         example: `booking_id | payment_method
 ---------- | --------------
 1          | Credit_Card`,
@@ -169,7 +169,7 @@ Space_Warriors   | Action`,
     {
         id: 15,
         title: "Q15 - Subquery",
-        desc: "จงแสดงชื่อพนักงานท่ีมีเงินเดือนมากกว่าเงินเดือนเฉลี่ยของบริษัท",
+        desc: "จงแสดงชื่อพนักงานที่มีเงินเดือนมากกว่าเงินเดือนเฉลี่ยของบริษัท",
         example: `name
 -----------
 Mike_Rose`,
@@ -179,7 +179,7 @@ Mike_Rose`,
     {
         id: 16,
         title: "Q16 - Between",
-        desc: "จงแสดงชื่อหนังท่ีฉายระหว่างปี 2025 ถึง 2026 (รวม)",
+        desc: "จงแสดงชื่อหนังที่ฉายระหว่างปี 2025 ถึง 2026 (รวม)",
         example: `title
 -----------
 Space_Warriors`,
@@ -199,7 +199,7 @@ John_Smith | Cashier            | Morning`,
     {
         id: 18,
         title: "Q18 - Sum Revenue",
-        desc: "จงหาจำนวนเงินทังหมด (total_revenue) จากการจองทังหมด",
+        desc: "จงหาจำนวนเงินทั้งหมด (total_revenue) จากการจองทั้งหมด",
         example: `total_revenue
 -------------
 2300.00`,
@@ -209,7 +209,7 @@ John_Smith | Cashier            | Morning`,
     {
         id: 19,
         title: "Q19 - Group By Having",
-        desc: "จงนับจำนวนที่นั่งกนิส่าสินค้าแต่ละ Status โดยแสดงเฉพาะท่ีมจำนวนมากกว่า 1 ตัว (column: status, count_seats)",
+        desc: "จงนับจำนวนของ seats ว่าแต่ละ status มีจำนวนเก้าอี้เท่าไหร่ เอาแค่ status ที่มีเก้าอี้มากกว่า 1 (column: status, count_seats)",
         example: `status      | count_seats
 ---------- | -----------
 Available | 5`,
@@ -219,7 +219,7 @@ Available | 5`,
     {
         id: 20,
         title: "Q20 - IN Clause",
-        desc: "จงแสดงชื่อหนังท่ีมแนว 'Action' หรือ 'Comedy'",
+        desc: "จงแสดงชื่อหนังที่มแนว 'Action' หรือ 'Comedy'",
         example: `title
 -----------
 Space_Warriors`,
@@ -239,7 +239,7 @@ Space_Warriors`,
     {
         id: 22,
         title: "Q22 - Join (Showtime)",
-        desc: "จงแสดงชื่อหนัง (title) และเวลาเริ่มฉาย (start_time) ของรอบฉายทังหมด",
+        desc: "จงแสดงชื่อหนัง (title) และเวลาเริ่มฉาย (start_time) ของรอบฉายทั้งหมด",
         example: `title            | start_time
 ---------------- | ----------------
 Space_Warriors   | 2025-08-01_10:00`,
@@ -259,7 +259,7 @@ BigCinema_Central | Screen_1 | 200`,
     {
         id: 24,
         title: "Q24 - Having Salary",
-        desc: "จงนับจำนวนพนักงานท่ีทำงานในแต่ละโรงหนัง (column: cinema_id, total_staff) แสดงเฉพาะท่ีมีพนักงาน 5 คนหรือมากกว่า",
+        desc: "จงนับจำนวนพนักงานที่ทำงานในแต่ละโรงหนัง (column: cinema_id, total_staff) แสดงเฉพาะที่มีพนักงาน 5 คนหรือมากกว่า",
         example: `cinema_id | total_staff
 --------- | -----------
 1         | 5`,
@@ -269,7 +269,7 @@ BigCinema_Central | Screen_1 | 200`,
     {
         id: 25,
         title: "Q25 - Date Functions",
-        desc: "จงแสดงปี (year) และจำนวนหนังท่ีฉายในปีนัน (column: yr, count) เรียงลำดับปี",
+        desc: "จงแสดงปี (year) และจำนวนหนังที่ฉายในปีนัน (column: yr, count) เรียงลำดับปี",
         example: `yr    | count
 ----- | -----
 2024 | 1`,
@@ -289,7 +289,7 @@ BigCinema_Central | Screen_1 | 200`,
     {
         id: 27,
         title: "Q27 - Not Like",
-        desc: "จงแสดงชื่อหนังท่ีไมได้มีคำว่า 'Love' ในชื่อ",
+        desc: "จงแสดงชื่อหนังที่ไมได้มีคำว่า 'Love' ในชื่อ",
         example: `title
 -----------
 Space_Warriors`,
@@ -309,7 +309,7 @@ John_Smith  | Cashier`,
     {
         id: 29,
         title: "Q29 - In/Subquery",
-        desc: "จงแสดงชื่อพนักงานท่ีทำงานในตำแหน่ง 'Cashier' หรือ 'Manager_Assistant'",
+        desc: "จงแสดงชื่อพนักงานที่ทำงานในตำแหน่ง 'Cashier' หรือ 'Manager_Assistant'",
         example: `name
 -----------
 John_Smith`,
@@ -319,7 +319,7 @@ John_Smith`,
     {
         id: 30,
         title: "Q30 - Concat",
-        desc: "จงสร้าง column name_fullformat ท่ีนำ name & space & email มาต่อกัน",
+        desc: "จงสร้าง column name_fullformat ที่นำ name & space & email มาต่อกัน",
         example: `name_fullformat
 ----------------
 John_Smith JOHN_SMIT`,
@@ -331,7 +331,7 @@ John_Smith JOHN_SMIT`,
     {
         id: 31,
         title: "Q31 - Movie Revenue (Multi Join)",
-        desc: "จงหาชื่อหนัง (title) และรายได้รวม (total_revenue) โดย JOIN Movie -> Showtime -> Booking แสดงเฉพาะท่ีมรายได",
+        desc: "จงหาชื่อหนัง (title) และรายได้รวม (total_revenue) โดย JOIN Movie -> Showtime -> Booking แสดงเฉพาะที่มรายได",
         example: `title            | total_revenue
 ---------------- | -------------
 Space_Warriors   | 2300.00`,
@@ -341,7 +341,7 @@ Space_Warriors   | 2300.00`,
     {
         id: 32,
         title: "Q32 - Cinema Employee Detail",
-        desc: "จงแสดงชื่อโรงหนัง, ชื่่อพนักงาน, เงินเดือน และ ตำแหน่ง โดยต้องแสดงเฉพาะพนักงานท่ีมเงินเดือน 30,000 ขึ้นไป และทำงานที่ Bangkok",
+        desc: "จงแสดงชื่อโรงหนัง, ชื่่อพนักงาน, เงินเดือน และ ตำแหน่ง โดยต้องแสดงเฉพาะพนักงานที่มเงินเดือน 30,000 ขึ้นไป และทำงานที่ Bangkok",
         example: `name                | name      | salary | position
 ------------------- | --------- | ------ | ---------
 BigCinema_Central | Mike_Rose | 35000.0| Manager_Assistant`,
@@ -351,7 +351,7 @@ BigCinema_Central | Mike_Rose | 35000.0| Manager_Assistant`,
     {
         id: 33,
         title: "Q33 - Most Booked Screen",
-        desc: "จงหาชื่อสครีน (name) ท่ีมีการจองตั๋ว (count ของ ticket) มากที่สุด",
+        desc: "จงหาชื่อสครีน (name) ที่มีการจองตั๋ว (count ของ ticket) มากที่สุด",
         example: `name
 --------
 Screen_1`,
@@ -371,7 +371,7 @@ Action   | 1`,
     {
         id: 35,
         title: "Q35 - Actor Filmography",
-        desc: "จงแสดงชื่อผู้แสดง (actor name) และ ชื่่อหนังท่ีเขานแสดง (title) มาพร้อมกัน",
+        desc: "จงแสดงชื่อผู้แสดง (actor name) และ ชื่่อหนังที่เขานแสดง (title) มาพร้อมกัน",
         example: `full_name        | title
 -------------- | -----------
 Tony_Stark     | Space_Warriors`,
